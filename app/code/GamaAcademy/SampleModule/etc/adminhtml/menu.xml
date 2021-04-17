@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+            id="GamaAcademy_SampleModule::menu_admin"
+            title="Gama Academy"
+            translate="title"
+            module="GamaAcademy_SampleModule"
+            sortOrder="0"
+            action="cms/page"
+            resource="GamaAcademy_SampleModule::menuaccess"
+        />
+    </menu>
+</config>

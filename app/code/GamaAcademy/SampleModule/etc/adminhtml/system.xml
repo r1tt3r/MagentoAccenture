@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="gamaacademy" translate="label" sortOrder="1">
+            <label>Gama Academy</label>
+        </tab>
+        <section id="SampleDataGama" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Geral</label>
+            <tab>gamaacademy</tab>
+            <resource>GamaAcademy_SampleModule::menuaccess</resource>
+            <group id="GamaGroup" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="text1Gama" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Text 1 Sample</label>
+                </field>
+                <field id="customOptionsGama" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Custom Options</label>
+                    <source_model>GamaAcademy\SampleModule\Model\OptionModel</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
